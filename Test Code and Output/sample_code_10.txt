@@ -1,0 +1,14 @@
+IN [2043]
+XCHG [2043],A
+MOV B,A
+RCR B
+JBE 000F
+MOV A,02H
+HLT
+MOV A,01H
+HLT
+
+
+;; Take an input
+;; if input is even number then A=02
+;; if input is odd number then A=01
